@@ -214,7 +214,7 @@ void Mem_Reset()
 		}
 	}
 		
-	Mem_Status = &_Mem_PtrTable[0];
+	Mem_Status = (Mem_StatusData*)&_Mem_PtrTable[0];
 	Mem_PtrTable = &_Mem_PtrTable[MEMSTATUS_SIZE >> 2];
 	
 	Mem_Status->SRAMDirty = 0;
