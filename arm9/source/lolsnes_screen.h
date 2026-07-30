@@ -1,5 +1,5 @@
 
-//{{BLOCK(lolsnes)
+//{{BLOCK(lolsnes_screen)
 
 //======================================================================
 //
@@ -18,12 +18,12 @@
 #ifndef GRIT_LOLSNES_H
 #define GRIT_LOLSNES_H
 
-#define lolsnesBitmapLen 49152
-extern const unsigned short lolsnesBitmap[24576];
+#define lolsnes_screenBitmapLen 49152
+extern const unsigned short lolsnes_screenBitmap[24576];
 
-#define lolsnesPalLen 512
-extern const unsigned short lolsnesPal[256];
+#define lolsnes_screenPalLen 512
+extern const unsigned short lolsnes_screenPal[256];
 
 #endif // GRIT_LOLSNES_H
 
-//}}BLOCK(lolsnes)
+//}}BLOCK(lolsnes_screen)
