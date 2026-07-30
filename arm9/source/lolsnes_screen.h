@@ -3,27 +3,23 @@
 
 //======================================================================
 //
-//	lolsnes, 256x192@8, 
+//	lolsnes_screen, 256x192@16, 
 //	Alphabit on.
-//	+ palette 256 entries, not compressed
 //	+ bitmap not compressed
-//	Total size: 512 + 49152 = 49664
+//	Total size: 98304 = 98304
 //
-//	Time-stamp: 2026-07-30, 22:36:31
+//	Time-stamp: 2026-07-30, 22:41:02
 //	Exported by Cearn's GBA Image Transmogrifier, v0.8.6
 //	( http://www.coranac.com/projects/#grit )
 //
 //======================================================================
 
-#ifndef GRIT_LOLSNES_H
-#define GRIT_LOLSNES_H
+#ifndef GRIT_LOLSNES_SCREEN_H
+#define GRIT_LOLSNES_SCREEN_H
 
-#define lolsnes_screenBitmapLen 49152
-extern const unsigned short lolsnes_screenBitmap[24576];
+#define lolsnes_screenBitmapLen 98304
+extern const unsigned short lolsnes_screenBitmap[49152];
 
-#define lolsnes_screenPalLen 512
-extern const unsigned short lolsnes_screenPal[256];
-
-#endif // GRIT_LOLSNES_H
+#endif // GRIT_LOLSNES_SCREEN_H
 
 //}}BLOCK(lolsnes_screen)
