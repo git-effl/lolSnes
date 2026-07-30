@@ -6,6 +6,7 @@
 
 #include "dsp.h"
 //#include "apu.h"
+#include <string.h>
 #include "mixrate.h"
 
 // Envelope timing table.  Number of counts that should be subtracted from the counter
