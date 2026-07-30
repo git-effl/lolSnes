@@ -19,6 +19,7 @@
 #include <nds.h>
 
 #include "memory.h"
+#include "ppu.h"
 
 
 u8 DMA_Chans[8*16];
