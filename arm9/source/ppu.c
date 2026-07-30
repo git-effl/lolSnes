@@ -23,6 +23,7 @@
 
 #include "ppu_prio.h"
 
+void PPU_ModeChange(u8 newmode);
 
 
 #define BG_CHR_BASE		0x06000000
