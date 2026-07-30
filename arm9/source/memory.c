@@ -22,6 +22,8 @@
 #include "memory.h"
 #include "ppu.h"
 
+extern void ROM_SetupCache(void);
+
 
 u32 ROM_BaseOffset DTCM_BSS;
 u32 ROM_HeaderOffset;
