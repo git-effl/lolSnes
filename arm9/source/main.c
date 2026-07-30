@@ -40,21 +40,21 @@ void doSplashscreen()
 	int i;
 	
 	u16* pal = (u16*)0x05000000;
-	for (i = 0; i < (lolsnes_screenBitmapLen >> 1); i++)
-		pal[i] = lolsnes_screenBitmap[i];
+	for (i = 0; i < (lolsnes_screenPalLen >> 1); i++)
+		pal[i] = lolsnes_screenPal[i];
 	
 	videoBgEnable(0);
 	
-	int mapblock = ((lolsnes_screenBitmapLen + 0x7FF) >> 11);
+	int mapblock = ((lolsnes_screenTilesLen + 0x7FF) >> 11);
 	*(vu16*)0x04000008 = (mapblock << 8) | 0x0080;
 	
 	u32* tiles = (u32*)0x06000000;
 	for (i = 0; i < (lolsnes_screenTilesLen >> 2); i++)
-		tiles[i] = lolsnes_screenBitmap[i];
+		tiles[i] = lolsnes_screenTiles[i];
 		
 	u16* map = (u16*)(0x06000000 + (mapblock << 11));
-	for (i = 0; i < (lolsnes_screenBitmapLen >> 1); i++)
-		map[i] = lolsnes_screenBitmap[i];
+	for (i = 0; i < (lolsnes_screenMapLen >> 1); i++)
+		map[i] = lolsnes_screenMap[i];
 		
 	*(vu16*)0x04000010 = 0;
 	*(vu16*)0x04000012 = 0;
