@@ -27,4 +27,3 @@ extern const unsigned short lolsnesPal[256];
 #endif // GRIT_LOLSNES_H
 
 //}}BLOCK(lolsnes)
-
